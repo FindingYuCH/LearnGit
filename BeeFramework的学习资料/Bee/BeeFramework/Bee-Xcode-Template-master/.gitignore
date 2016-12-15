@@ -1,0 +1,39 @@
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+
+#CocoaPods
+Pods
+
+/Templates/Project Templates/BeeFramework/BeeFramework.xctemplate
+
+/Templates/Project Templates/BeeFramework/BeeSource.xctemplate
+/Templates/Project Templates/BeeFramework/BeeVendor.xctemplate
+/Templates/Project Templates/BeeFramework/Empty Application (with source).xctemplate
+/Templates/Project Templates/BeeFramework/Sidebar Application.xctemplate
+/Templates/Project Templates/BeeFramework/Tabbed Application.xctemplate
+
+/template.tar.gz
+/temp/
+/build.sh
+
+/Templates/Empty Application (framework).xctemplate/
+/Templates/Empty Application (framework).xctemplate.zip
+
+/Templates.src/
+/links/
