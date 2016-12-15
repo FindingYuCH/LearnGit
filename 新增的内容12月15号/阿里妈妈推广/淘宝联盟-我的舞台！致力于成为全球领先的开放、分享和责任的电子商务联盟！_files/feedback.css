@@ -1,0 +1,637 @@
+/* iconfont */
+@font-face {
+  font-family: 'fbsdkicon';
+  src: url('http://at.alicdn.com/t/font_1426843862_1455607.eot');
+  src: url('http://at.alicdn.com/t/font_1426843862_1455607.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('http://at.alicdn.com/t/font_1426843862_1455607.woff') format('woff'), /* chrome、firefox */ url('http://at.alicdn.com/t/font_1426843862_1455607.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('http://at.alicdn.com/t/font_1426843862_1455607.svg#iconfont') format('svg');
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+.muxfb-icon {
+  font-family: "fbsdkicon";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  /* 1 */
+  speak: none;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+}
+.muxfb-icon-feedback:before {
+  content: "\e60b";
+}
+.muxfb-icon-image:before {
+  content: "\e606";
+}
+.muxfb-icon-close:before {
+  content: "\e610";
+}
+.muxfb-icon-smile:before {
+  content: "\e612";
+}
+.muxfb-icon-logo:before {
+  content: "\e61e";
+}
+/* mixin */
+/* normal global emitter */
+.muxfb-global-emitter {
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  z-index: 2147483647;
+  width: 36px;
+  height: 36px;
+  background-color: #eee;
+  font-size: 24px;
+  color: #666;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 2px;
+  cursor: pointer;
+  /*&:hover {
+        .muxfb-global-tip {
+            display: block;
+        }
+    }*/
+  /* tip */
+}
+.muxfb-global-emitter .muxfb-global-unread {
+  position: absolute;
+  left: -16px;
+  top: -8px;
+}
+.muxfb-global-emitter .muxfb-global-tip {
+  font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', sans-serif;
+  position: absolute;
+  font-size: 12px;
+  width: 308px;
+  left: -377px;
+  line-height: 1.8;
+  background-color: #eee;
+  color: #333;
+  border-radius: 5px;
+  top: -93px;
+  display: none;
+  text-align: left;
+  padding: 25px;
+}
+.muxfb-global-emitter .muxfb-global-tip .muxfb-icon-feedback {
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.muxfb-global-emitter .muxfb-global-tip .msg {
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.muxfb-global-emitter .muxfb-global-tip .msg em {
+  font-weight: bold;
+  font-style: normal;
+}
+.muxfb-global-emitter .muxfb-global-tip .muxfb-global-tip-close,
+.muxfb-global-emitter .muxfb-global-tip .muxfb-global-tip-bottom {
+  display: none;
+}
+.muxfb-global-showtip .muxfb-global-tip {
+  display: block;
+}
+.muxfb-global-showguide .muxfb-global-tip {
+  display: block;
+  top: -160px;
+}
+.muxfb-global-showguide .muxfb-global-tip .muxfb-global-tip-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #d0d0d0;
+  width: 25px;
+  height: 25px;
+  font-family: "fbsdkicon";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  /* 1 */
+  speak: none;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+}
+.muxfb-global-showguide .muxfb-global-tip .muxfb-global-tip-close:before {
+  content: "\e610";
+}
+.muxfb-global-showguide .muxfb-global-tip .muxfb-global-tip-close:hover {
+  color: #61a500;
+}
+.muxfb-global-showguide .muxfb-global-tip .muxfb-global-tip-bottom {
+  margin-top: 16px;
+  display: block;
+  border-top: 1px solid #e2e2e2;
+}
+.muxfb-global-showguide .muxfb-global-tip .muxfb-global-tip-bottom span {
+  width: 125px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: #666;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px auto 0 auto;
+}
+/* dialog */
+.muxfb-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483647;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #666;
+  font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', sans-serif;
+}
+.muxfb-dialog .muxfb-dialog-panel {
+  border-radius: 2px;
+  border: 1px solid #e7e7e7;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  min-height: 100px;
+  max-height: 570px;
+  min-width: 380px;
+  overflow: auto;
+  -webkit-transition: right 0.4s;
+  transition: right 0.4s;
+  padding-left: 150px;
+}
+.muxfb-dialog .muxfb-dialog-panel .muxfb-dialog-close {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  color: #d0d0d0;
+  width: 25px;
+  height: 25px;
+  font-family: "fbsdkicon";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  /* 1 */
+  speak: none;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  cursor: pointer;
+}
+.muxfb-dialog .muxfb-dialog-panel .muxfb-dialog-close:before {
+  content: "\e610";
+}
+.muxfb-dialog .muxfb-dialog-panel .muxfb-dialog-close:hover {
+  color: #61a500;
+}
+.muxfb-dialog .muxfb-dialog-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.g-unread-em {
+  background: #e43300;
+  border-radius: 9px;
+  height: 14px;
+  padding: 2px;
+  min-width: 14px;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 14px;
+  text-align: center;
+  font-style: normal;
+  color: #fff;
+  vertical-align: 3px;
+  margin-left: 8px;
+  -webkit-transform: scale(0.75);
+  -o-transform: scale(0.75);
+}
+/* left tab */
+.muxfb-left-tab-wrap {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+}
+.muxfb-left-tab-wrap .muxfb-left-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.muxfb-left-tab-wrap .muxfb-left-logo i {
+  font-size: 65px;
+  color: #61a500;
+  display: block;
+}
+.muxfb-left-tab-wrap .muxfb-left-logo .title {
+  font-size: 12px;
+  display: block;
+  color: #61a500;
+  margin-top: 10px;
+}
+.muxfb-left-tab-wrap ul {
+  list-style: none;
+  margin-left: 50px;
+  padding-left: 0;
+  margin-top: 15px;
+}
+.muxfb-left-tab-wrap ul li {
+  margin-bottom: 8px;
+  height: 25px;
+  line-height: 25px;
+}
+.muxfb-left-tab-wrap ul li a {
+  font-size: 16px;
+  color: #61a500;
+  text-decoration: underline;
+}
+.muxfb-left-tab-wrap ul li.current a {
+  color: #666;
+  text-decoration: none;
+  cursor: default;
+}
+.muxfb-list {
+  display: none;
+  min-height: 400px;
+  max-height: 570px;
+  padding: 25px 30px;
+}
+.muxfb-list .muxfb-list-title {
+  font-size: 16px;
+  color: #333;
+  line-height: 15px;
+  font-weight: bold;
+}
+.muxfb-list .muxfb-list-summary {
+  color: #999;
+  font-size: 12px;
+  margin: 12px 0;
+}
+.muxfb-list .muxfb-lists-unread {
+  height: 335px;
+  background: #f5f5f5;
+  text-align: center;
+}
+.muxfb-list .muxfb-lists-unread .muxfb-icon {
+  margin-top: 60px;
+}
+.muxfb-list .muxfb-lists-unread .muxfb-icon:before {
+  font-size: 125px;
+  color: #dcdcdc;
+}
+.muxfb-list .muxfb-lists-unread .muxfb-lists-message {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  color: #999;
+}
+.muxfb-list ul.muxfb-fb-lists {
+  height: 335px;
+  width: 320px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail {
+  margin-bottom: 20px;
+  background: #f5f5f5;
+  width: 320px;
+  list-style: none;
+  padding-bottom: 15px;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-content {
+  padding: 15px;
+  padding-bottom: 0px;
+  color: #333;
+  font-size: 12px;
+  margin: 0px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom {
+  padding: 15px 15px 5px 15px;
+  padding-top: 0px;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 31px;
+  *zoom: 1;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom:before,
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom:after {
+  display: table;
+  content: '';
+  line-height: 0;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom:after {
+  clear: both;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom .muxfb-detail-bottom-date {
+  float: right;
+  color: #999;
+  font-size: 12px;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom .muxfb-detail-bottom-img {
+  display: inline-block;
+  margin-right: 10px;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom .muxfb-detail-bottom-img i {
+  font-size: 18px;
+  color: #61a500;
+  vertical-align: -1px;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-bottom .muxfb-detail-bottom-img a {
+  text-decoration: underline;
+  color: #61a500;
+  font-size: 12px;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-reply {
+  color: #e43300;
+  font-size: 12px;
+  margin-left: 50px;
+  padding: 15px 15px 0 15px;
+  position: relative;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-reply .muxfb-detail-reply-left {
+  position: absolute;
+  left: -36px;
+  top: 15px;
+}
+.muxfb-list ul.muxfb-fb-lists li.muxfb-fb-detail .muxfb-detail-reply pre {
+  word-break: break-all;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 1px 0;
+}
+/* form */
+.muxfb-form {
+  padding: 25px 30px;
+}
+.muxfb-form textarea,
+.muxfb-form button,
+.muxfb-form input {
+  outline: none;
+}
+.muxfb-form .muxfb-form-title {
+  margin: 0;
+  padding: 0 0 8px 0;
+  font-size: 16px;
+  border: none;
+  line-height: 1.8;
+}
+.muxfb-form .muxfb-form-textarea {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 0;
+  width: 290px;
+  height: 100px;
+  padding: 5px;
+  color: #666;
+  line-height: 1.8;
+  font-size: 12px;
+  resize: none;
+  margin: 0;
+  -webkit-box-shadow: none;
+}
+.muxfb-form .muxfb-form-btns {
+  margin-top: 20px;
+}
+.muxfb-form .muxfb-form-btns .muxfb-form-submit {
+  background-color: #61a500;
+  border: none;
+  color: #fff;
+  width: 110px;
+  height: 30px;
+  cursor: pointer;
+}
+.muxfb-form .muxfb-form-btns .muxfb-form-submit.status-submiting {
+  background-color: #333;
+  cursor: default;
+}
+.muxfb-form .muxfb-form-message {
+  color: red;
+  display: none;
+}
+/* tabs */
+.muxfb-tabs .muxfb-tabs-bar {
+  margin: 12px 0 0 0;
+  padding: 0;
+  *zoom: 1;
+}
+.muxfb-tabs .muxfb-tabs-bar:before,
+.muxfb-tabs .muxfb-tabs-bar:after {
+  display: table;
+  content: '';
+  line-height: 0;
+}
+.muxfb-tabs .muxfb-tabs-bar:after {
+  clear: both;
+}
+.muxfb-tabs .muxfb-tabs-bar li {
+  float: left;
+  list-style: none;
+  margin-right: 12px;
+}
+.muxfb-tabs .muxfb-tabs-bar li input {
+  margin: 0 4px;
+}
+.muxfb-tabs .muxfb-tabs-panel {
+  margin: 10px 0 0 0;
+  display: hidden;
+}
+.muxfb-tabs .muxfb-tabs-panel ul {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+.muxfb-tabs .muxfb-tabs-panel ul li {
+  list-style: none;
+}
+.muxfb-tabs .muxfb-tabs-panel .muxfb-question-category {
+  margin: 10px 0;
+  display: block;
+}
+/* star */
+.muxfb-star label {
+  padding-right: 10px;
+  width: 90px;
+  height: 30px;
+  overflow: hidden;
+  diaply: blcok;
+  float: left;
+}
+.muxfb-star .muxfb-star-info {
+  margin-left: 15px;
+  color: #333;
+  font-size: 12px;
+}
+.muxfb-star .muxfb-star-selected {
+  font-family: "fbsdkicon";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  /* 1 */
+  speak: none;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+  color: #fd9718;
+}
+.muxfb-star .muxfb-star-selected:before {
+  font-size: 21px;
+  content: "\e607";
+}
+.muxfb-star .muxfb-star-unselected {
+  font-family: "fbsdkicon";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  /* 1 */
+  speak: none;
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+}
+.muxfb-star .muxfb-star-unselected:before {
+  font-size: 21px;
+  content: "\e607";
+}
+/* uploader */
+.muxfb-uploader {
+  *zoom: 1;
+  background: #fbfbfb;
+  width: 290px;
+  margin-top: -9px;
+  border: 1px solid #ececec;
+  padding: 5px;
+  position: relative;
+}
+.muxfb-uploader:before,
+.muxfb-uploader:after {
+  display: table;
+  content: '';
+  line-height: 0;
+}
+.muxfb-uploader:after {
+  clear: both;
+}
+.muxfb-uploader .muxfb-uploader-input {
+  float: left;
+  position: relative;
+  width: 110px;
+  color: #61a500;
+  cursor: pointer;
+  margin: 0;
+}
+.muxfb-uploader .muxfb-uploader-input i {
+  font-size: 22px;
+  vertical-align: -1px;
+}
+.muxfb-uploader .muxfb-uploader-input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.muxfb-uploader .muxfb-uploader-preview {
+  *zoom: 1;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 296px;
+  padding-left: 4px;
+}
+.muxfb-uploader .muxfb-uploader-preview:before,
+.muxfb-uploader .muxfb-uploader-preview:after {
+  display: table;
+  content: '';
+  line-height: 0;
+}
+.muxfb-uploader .muxfb-uploader-preview:after {
+  clear: both;
+}
+.muxfb-uploader .muxfb-uploader-preview li {
+  list-style: none;
+  float: left;
+  height: 14px;
+  line-height: 11px;
+  margin: 2px 5px;
+  position: relative;
+  overflow: hidden;
+  background: #61a500;
+  color: #fff;
+  padding: 5px 18px 2px 5px;
+  border-radius: 2px;
+  width: 25px;
+  white-space: nowrap;
+}
+.muxfb-uploader .muxfb-uploader-preview li i {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  z-index: 1;
+  background: #61a500;
+}
+/* successful */
+.muxfb-successful {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 30px 55px 30px;
+}
+.muxfb-successful p {
+  margin: 0;
+  padding: 0;
+}
+.muxfb-successful .muxfb-icon {
+  font-size: 100px;
+  color: #61a500;
+}
+.muxfb-successful .muxfb-successful-thanks {
+  font-size: 20px;
+  color: #61a500;
+}

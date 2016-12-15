@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>46252FDB-2152-4D07-8BD6-CEE04E23B18C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AdsMoGoSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>46DC75B5-3692-40E9-914C-FB4542EB5754</key>
+		<string>http://code.himogo.com:8040/svn/mogo/iOS-SDK/trunk/AdsMoGo%20SDK%202013%20/AdsMoGoSample/AdsMoGoSample/AdsMoGoSample.xcodeproj</string>
+		<key>D8C2823D-FFA6-4020-8CCA-280095059B27</key>
+		<string>http://code.himogo.com:8040/svn/mogo/iOS-SDK/trunk/AdsMoGo%20SDK%202013%20/AdsMoGoSample/AdsMoGoSample/AdsMoGoSample/en.lproj</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>46DC75B5-3692-40E9-914C-FB4542EB5754</key>
+		<string>..</string>
+		<key>D8C2823D-FFA6-4020-8CCA-280095059B27</key>
+		<string>../../AdsMoGoSample/en.lproj</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>46DC75B5-3692-40E9-914C-FB4542EB5754</key>
+		<string>http://code.himogo.com:8040/svn/mogo</string>
+		<key>D8C2823D-FFA6-4020-8CCA-280095059B27</key>
+		<string>http://code.himogo.com:8040/svn/mogo</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://code.himogo.com:8040/svn/mogo/iOS-SDK/trunk/AdsMoGo%20SDK%202013%20/AdsMoGoSample/AdsMoGoSample/AdsMoGoSample.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>46DC75B5-3692-40E9-914C-FB4542EB5754</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46DC75B5-3692-40E9-914C-FB4542EB5754</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AdsMoGoSample</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D8C2823D-FFA6-4020-8CCA-280095059B27</string>
+			<key>IDESourceControlWCCName</key>
+			<string>en</string>
+		</dict>
+	</array>
+</dict>
+</plist>

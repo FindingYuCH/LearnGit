@@ -1,0 +1,35 @@
+/* header */
+#site-nav{height:28px;}
+#site-nav .bd{width:950px;margin:0 auto;}
+#site-nav .login-info{float:left;margin-top:4px;}
+#site-nav .quick-menu{float: right;overflow:hidden;margin-top:4px;}
+#site-nav .quick-menu li{float:left;margin-right:-1px;}
+#site-nav .quick-menu a{border-right:1px solid #b2b2b2;color:#717171;padding:0 10px;}
+
+#header .header-con{height:38px;margin-top:20px;}
+#header .club-logo{float:left;}
+#header .club-search{float:right;width:330px;margin-top:7px;}
+#header .club-search .search-form{border:1px solid #CCC;border-radius:2px;float:left;padding: 2px;}
+#header .club-search .search-form-focus{border-color: #ffb676;box-shadow: 0 0 4px rgba(255,182,118,1);}
+#header .club-search .search-form .s-input{border:none;border:0;border-right:1px solid #CCC;height:14px;line-height:14px;padding: 2px;outline:none;width:243px;}
+#header .club-search .search-form .s-submit{height:18px;line-height:18px;width:28px;border: none;background-position: 6px -46px;}
+#header .club-search .search-tip{float: left;margin-left:10px;margin-top:7px;*margin-top:10px;}
+
+.nav .main-nav{border:1px solid #ff9c45;border-radius:3px;background-color: #ffcea2;height:32px;margin-top:10px;}
+.nav .main-nav ol{float:left;}
+.nav .main-nav ol li{float:left;border-right:1px dotted #000;height:18px;margin-top:7px;}
+.nav .main-nav ol a{float:left;font-size:14px;color:#000;height:32px;line-height:32px;margin-top:-7px;width:108px;text-align:center;position: relative;}
+.nav .main-nav ol a:hover{background-color: #ec812f;color: #FFF;text-decoration:none;}
+.nav .main-nav ol .current a{background-color: #FFF;border-radius:3px 0 0 3px;position: relative;}
+.nav .main-nav ol .current a:hover{color: #000;}
+.nav .main-nav ol .current a i{position: absolute;left: 48px;bottom: -10px;width: 0;height: 0;border-width: 5px;border-style: solid;border-color: #ff9c45 transparent transparent;font-size: 0;line-height: 0;}
+.nav .main-nav ul{float:right;margin:8px 31px 0 0;_display:inline;}
+.nav .main-nav ul li{border-left:1px dotted #000;border-right:1px dotted #000;padding:0 5px;width:88px;}
+.nav .main-nav ul a{float:left;height:17px;line-height:17px;position: relative;padding-left:15px;}
+.nav .main-nav ul a .icon{height:16px;width:11px;position: absolute;top:0;left:0;background-position: -23px -80px;}
+.nav .sub-nav{margin-top:12px;}
+.nav .sub-nav li{float:left;margin:0 20px;}
+.nav .sub-nav a{position: relative;overflow: hidden;}
+.nav .sub-nav a i{background: #e94609;height: 2px; width: 25px;position: absolute;bottom: -8px;right: 25%;display: none;}
+.nav .sub-nav a:hover{text-decoration:none;}
+.nav .sub-nav a:hover i{display: block;}
